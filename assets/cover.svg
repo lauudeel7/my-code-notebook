@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#121018"/><stop offset="1" stop-color="#261927"/></linearGradient><linearGradient id="p"><stop stop-color="#F6A8C8"/><stop offset="1" stop-color="#D9B8FF"/></linearGradient></defs>
+<rect width="1200" height="300" rx="26" fill="url(#g)"/><circle cx="1040" cy="30" r="190" fill="#F6A8C8" opacity=".08"/>
+<rect x="58" y="48" width="6" height="204" rx="3" fill="url(#p)"/>
+<text x="95" y="95" fill="#F6A8C8" font-family="Arial,sans-serif" font-size="18" letter-spacing="5">MY PERSONAL PROGRAMMING NOTEBOOK</text>
+<text x="92" y="170" fill="#FFF5FA" font-family="Arial,sans-serif" font-size="62" font-weight="bold">my-code-notebook</text>
+<text x="96" y="218" fill="#D7C7D5" font-family="Arial,sans-serif" font-size="24">Read the problem. Write the code. Learn by debugging.</text>
+<g transform="translate(930 105)" fill="none" stroke="#F6A8C8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 10 L-30 40 L0 70 M92 10 L122 40 L92 70 M68 -5 L28 85"/><rect x="-45" y="-30" width="185" height="140" rx="18" stroke="#D9B8FF" opacity=".55"/></g>
+</svg>
