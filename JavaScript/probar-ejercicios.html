@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Code Notebook | Tester</title>
+    <style>
+        body {
+            background: #211b2b;
+            color: #f4d9e9;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #e8a6cb;
+        }
+
+        button {
+            background: #d99bc1;
+            color: #211b2b;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        pre {
+            background: #30263d;
+            padding: 15px;
+            border-radius: 8px;
+            min-height: 100px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Code Notebook</h1>
+    <p>Selecciona el ejercicio que quieres probar:</p>
+
+    <select id="ejercicio">
+        <option value="01-factorial.js">
+            Ejercicio 01
+        </option>
+        <option value="02-pares-impares.js">
+            Ejercicio 02
+        </option>
+        <option value="03-piramides.js">
+            Ejercicio 03
+        </option>
+        <option value="04-piramide-inversa.js">
+            Ejercicio 04
+        </option>
+        <option value="05-piramide-2.js">
+            Ejercicio 05
+        </option>
+        <option value="06-multiplos.js">
+            Ejercicio 06
+        </option>
+        <option value="07-tabla-descendente.js">
+            Ejercicio 07
+        </option>
+        <option value="08-fibonacci.js">
+            Ejercicio 08
+        </option>
+        <option value="09-piedra-papel-tijera.js">
+            Ejercicio 09
+        </option>
+    </select>
+
+    <button onclick="ejecutarEjercicio()">Ejecutar</button>
+
+    <h2>Consola de resultados</h2>
+    <pre id="consola">Aquí aparecerán los resultados...</pre>
+
+    <script src="probar-ejercicios.js"></script>
+
+</body>
+</html>
