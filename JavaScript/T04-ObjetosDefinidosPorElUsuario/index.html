@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Code Notebook | Tester Repaso ES6</title>
+    <style>
+        body {
+            background: #211b2b;
+            color: #f4d9e9;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #e8a6cb;
+        }
+
+        button {
+            background: #d99bc1;
+            color: #211b2b;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #e8a6cb;
+        }
+
+        select {
+            padding: 10px;
+            border-radius: 8px;
+            background: #30263d;
+            color: #f4d9e9;
+            border: 1px solid #d99bc1;
+            margin-right: 10px;
+        }
+
+        pre {
+            background: #30263d;
+            padding: 15px;
+            border-radius: 8px;
+            min-height: 120px;
+            white-space: pre-wrap;
+            border: 1px solid #47385c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Code Notebook</h1>
+    <p>Selecciona el ejercicio de repaso que quieres probar:</p>
+
+    <select id="ejercicio">
+        <option value="01-filtrado-transformacion.js">Ejercicio 1.1 - Filtrado y Transformación de Arrays</option>
+        <option value="02-gestion-inventario.js">Ejercicio 1.2 - Gestión de Inventario</option>
+        <option value="03-contexto-this.js">Ejercicio 2.1 - Análisis del Contexto de this</option>
+        <option value="04-encapsulacion-closure.js">Ejercicio 2.2 - Encapsulación mediante Closures</option>
+        <option value="05-desestructuracion-estudiante.js">Ejercicio 3.1 - Desestructuración de Objetos</option>
+        <option value="06-clase-cuenta-bancaria.js">Ejercicio 3.2 - Clase CuentaBancaria (ES6)</option>
+        <option value="07-gestion-biblioteca.js">Ejercicio 4.1 - Gestión de Biblioteca (Integrador)</option>
+    </select>
+
+    <button onclick="ejecutarEjercicio()">Ejecutar</button>
+
+    <h2>Consola de resultados</h2>
+    <pre id="consola">Aquí aparecerán los resultados...</pre>
+
+    <script src="probar-ejercicios.js"></script>
+
+</body>
+</html>
