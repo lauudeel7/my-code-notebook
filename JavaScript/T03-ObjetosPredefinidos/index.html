@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Code Notebook | Tester UD3</title>
+    <style>
+        body {
+            background: #211b2b;
+            color: #f4d9e9;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #e8a6cb;
+        }
+
+        button {
+            background: #d99bc1;
+            color: #211b2b;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #e8a6cb;
+        }
+
+        select {
+            padding: 10px;
+            border-radius: 8px;
+            background: #30263d;
+            color: #f4d9e9;
+            border: 1px solid #d99bc1;
+            margin-right: 10px;
+        }
+
+        pre {
+            background: #30263d;
+            padding: 15px;
+            border-radius: 8px;
+            min-height: 120px;
+            white-space: pre-wrap;
+            border: 1px solid #47385c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Code Notebook - UD3</h1>
+    <p>Selecciona el ejercicio de Objetos Predefinidos que quieres probar:</p>
+
+    <select id="ejercicio">
+        <option value="01-meses-ano.js">Ejercicio 01 - Meses del Año</option>
+        <option value="02-operaciones-array.js">Ejercicio 02 - Operaciones con Array Valors</option>
+        <option value="03-validacion-dni.js">Ejercicio 03 - Validación de DNI</option>
+        <option value="04-mayusculas-minusculas.js">Ejercicio 04 - Mayúsculas y Minúsculas</option>
+        <option value="05-palindromo.js">Ejercicio 05 - Comprobador de Palíndromos</option>
+        <option value="06-intervalo-dni.js">Ejercicio 06 - Petición de DNIs (setInterval)</option>
+        <option value="07-quiniela-aleatoria.js">Ejercicio 07 - Quiniela 1X2 Aleatoria</option>
+        <option value="08-quiniela-ponderada.js">Ejercicio 08 - Quiniela 1X2 Ponderada</option>
+        <option value="09-pi-dos-decimals.js">Ejercicio 09 - Número PI con 2 Decimale</option>
+        <option value="10-numeros-aleatorios-ordenados.js">Ejercicio 10 - 100 Números Aleatorios Ordenados</option>
+    </select>
+
+    <button onclick="ejecutarEjercicio()">Ejecutar</button>
+
+    <h2>Consola de resultados</h2>
+    <pre id="consola">Aquí aparecerán los resultados...</pre>
+
+    <script src="probar-ejercicios.js"></script>
+
+</body>
+</html>

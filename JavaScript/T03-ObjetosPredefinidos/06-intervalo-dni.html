@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DNIs</title>
+</head>
+<body>
+
+    <h1>Registro de DNIs</h1>
+
+    <script>
+        let dnis = [];
+        let letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+
+        function pedirDNI() {
+            let dni = prompt("Introduce un DNI (-1 para terminar):");
+
+            if (dni == "-1") {
+                clearInterval(intervalo);
+
+                document.write("<h2>DNIs introducidos:</h2>");
+
+                for (let i = 0; i < dnis.length; i++) {
+                    let letra = letras[dnis[i] % 23];
+                    document.write("<p>" + dnis[i] + letra + "</p>");
+                }
+
+                return;
+            }
+
+            let numero = parseInt(dni);
+
+            if (isNaN(numero) || numero < 10000000 || numero > 99999999) {
+                clearInterval(intervalo);
+                document.write("<p>El DNI introducido no es válido.</p>");
+                return;
+            }
+
+            dnis.push(numero);
+        }
+
+        let intervalo = setInterval(pedirDNI, 10000);
+
+    </script>
+
+</body>
+</html>
